@@ -3,9 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
+  <title>National Weather App check your Region</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
 </head>
+<style>
+  @media(min-width:0px) and (max-width:369px){
+    .card{
+  width: 100%;
+  max-width: 450px;
+  height: 100vh;
+  background:linear-gradient(135deg, #39665a,#131612);
+  color: #fff;
+  margin:10px auto 0;
+  border-radius: 20px;
+  padding:40px 35px;
+  text-align: center;
+}
+.search{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input{
+  border:0;
+  outline:0;
+  background:#ebfffc;
+  color: #555;
+  padding: 5px 5px;
+  height: 40px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.search button{
+  border:0;
+  outline:0;
+  background:white;
+  border-radius: 90%;
+  width: 90px;
+  height: 29px;
+  cursor: pointer;
+}
+.search button img{
+  width: 30px;
+  border-radius: 5px;
+  color: white;
+}
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1px;
+  margin-top: 40px;
+  font-size: 16px;
+}
+.col img{
+  width: 30px;
+  margin-right: 10px;
+}
+.humidity, .wind{
+  font-size: 20px;
+  margin-top: -6px;
+}
+  }
+</style>
 <body>
 <div class="card">
   <div class="search">

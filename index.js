@@ -14,23 +14,23 @@ async function checkWeather(city){
 
   if(data.weather[0].main=="Clouds"){
     weatherIcon.src = "images/clouds.png"
-    document.body.style.backgroundColor = "silver";
+    // document.body.style.backgroundColor = "silver";
   }
   else if(data.weather[0].main=="Clear"){
     weatherIcon.src = "images/clear.png"
-    document.body.style.backgroundColor = "grey";
+    // document.body.style.backgroundColor = "grey";
   }
   else if(data.weather[0].main=="Rain"){
     weatherIcon.src = "images/rain.png"
-    document.body.style.backgroundColor = "pink";
+    // document.body.style.backgroundColor = "pink";
   }
   else if(data.weather[0].main=="Drizzle"){
     weatherIcon.src = "images/drizzle.png"
-    document.body.style.backgroundColor = "grey";
+    // document.body.style.backgroundColor = "grey";
   }
   else if(data.weather[0].main=="Mist"){
     weatherIcon.src = "images/mist.png"
-    document.body.style.backgroundColor = "black";
+    // document.body.style.backgroundColor = "black";
   }
 
 }
